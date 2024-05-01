@@ -15,7 +15,7 @@ def init_client():
     """Initialize client to start sending messages"""
     client_sock = cs.ClientSocket()
     print("initializing client")
-    client_sock.connect_server(server_ip='10.45.96.37', port=1201)
+    client_sock.connect_server(server_ip='0.0.0.0', port=1201)
     # if client_sock.check_reachable():
     #     return client_sock
     return client_sock
