@@ -32,12 +32,18 @@ class ServerSocket:
         """Close server connection"""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
         self.host_sock.close()
         print("Server Socket Closed")
 =======
         self.host_sock.close()
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+<<<<<<< HEAD
 =======
         self.host_sock.close()
         print("Server Socket Closed")
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main

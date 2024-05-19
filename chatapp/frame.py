@@ -5,12 +5,18 @@ import customtkinter
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import  sys
 =======
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
 =======
 import  sys
 >>>>>>> c71df84 (updated exception errors)
+=======
+import  sys
+=======
+>>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+>>>>>>> origin/main
 import threading
 
 
@@ -21,22 +27,31 @@ customtkinter.set_default_color_theme(color_string="green")
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
 
 class MessageFrame(customtkinter.CTkTextbox):
     """Message Frame to Display Received and Send Messages"""
     def __init__(self, master):  #font=customtkinter.CTkFont()
         super().__init__(master, width=507, height=320)  #font
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
 =======
 class MessageFrame(customtkinter.CTkTextbox):
     """Message Frame to Display Received and Send Messages"""
     def __init__(self, master):  #font=customtkinter.CTkFont()
         super().__init__(master, width=500, height=270)  #font
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
         # self.configure(state = "disabled")
         self.pack(pady=50)
 
@@ -49,15 +64,21 @@ class MainFrame(customtkinter.CTk):
         self.title('P2P Chatapp')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
         self.geometry('700x520')
         self.resizable(0,0)
 =======
         self.geometry('700x500')
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+<<<<<<< HEAD
 =======
         self.geometry('700x520')
         self.resizable(0,0)
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
 
 
 
@@ -91,8 +112,11 @@ class ChatFrame:
         print('Getting user info')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
         while True:
             try:
                 get_info = customtkinter.CTkInputDialog(text="Enter your partner ip and name. Eg <name>:<ip>", \
@@ -105,14 +129,20 @@ class ChatFrame:
             except ValueError:
                 pass
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
 =======
         get_info = customtkinter.CTkInputDialog(text="Enter your partner ip and name. Eg <name>:<ip>", \
                                                 title='Partner user Info')
         self.parter_name, self.parter_ip = get_info.get_input().split(':')
         self.config_file.write_partner_config(name=self.parter_name, ip=self.parter_ip)
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
 
 
     def insert_textbox(self):
@@ -126,8 +156,11 @@ class ChatFrame:
                 self.index += 1.0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
         self.msg_frame.configure(state = 'disabled')
 
 
@@ -146,6 +179,9 @@ class ChatFrame:
             pass
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
 =======
 
 
@@ -158,8 +194,11 @@ class ChatFrame:
         self.msg_log.write_log(self.name, text)
         self.entry.delete('0', customtkinter.END)
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
 
     def recv_to_entry(self):
         """Display received message in textbox"""
@@ -170,17 +209,23 @@ class ChatFrame:
                     # self.msg_frame.insert(index=self.index, text=f"{self.parter_name} :\t{msg}")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
                     self.msg_frame.configure(state = "normal")
                     self.msg_frame.insert(index=customtkinter.END, text=f"{self.parter_name} :\t{msg}")
                     self.msg_frame.configure(state = "disabled")
 =======
                     self.msg_frame.insert(index=customtkinter.END, text=f"{self.parter_name} :\t{msg}")
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+<<<<<<< HEAD
 =======
                     self.msg_frame.configure(state = "normal")
                     self.msg_frame.insert(index=customtkinter.END, text=f"{self.parter_name} :\t{msg}")
                     self.msg_frame.configure(state = "disabled")
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
                     self.index+=1
                     self.msg_log.write_log(name=self.parter_name, text=msg)
                     # self.lock.release()
@@ -188,8 +233,11 @@ class ChatFrame:
                 pass
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
             except EOFError:
                 pass
 
@@ -204,12 +252,18 @@ class ChatFrame:
         self.init_frame()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
 =======
 
 
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
 
     def check_partnerinfo(self):
         """Checks for partner info"""
@@ -239,8 +293,11 @@ class ChatFrame:
         text_msg = customtkinter.StringVar()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
         self.entry = customtkinter.CTkEntry(master=self.app, width=378, height= 35, textvariable=text_msg, \
                                             placeholder_text="Message")
         self.entry.place(x=121, y=390)
@@ -255,14 +312,20 @@ class ChatFrame:
                                            command=self.exit_conv)
         exit_btn.place(x=472, y=40)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
 =======
         self.entry = customtkinter.CTkEntry(master=self.app, textvariable=text_msg, placeholder_text="Message")
         self.entry.pack()
         btn = customtkinter.CTkButton(master=self.app, text="submit", command=self.get_from_entry)
         btn.pack(pady=30)
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+<<<<<<< HEAD
 =======
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
 
         init_serv_thread = threading.Thread(target=self.chat.init_server, daemon=True)
         init_client_thread = threading.Thread(target=self.chat.init_client, daemon=True)
@@ -275,6 +338,9 @@ class ChatFrame:
         self.app.mainloop()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/main
         self.msg_log.clear_log()
         self.config_file.clear_config()
         sys.exit()
@@ -282,8 +348,11 @@ class ChatFrame:
         self.client_obj.close_sock()
         self.server_obj.close_server_sock()
 >>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
+<<<<<<< HEAD
 =======
         self.msg_log.clear_log()
         self.config_file.clear_config()
         sys.exit()
 >>>>>>> c71df84 (updated exception errors)
+=======
+>>>>>>> origin/main
