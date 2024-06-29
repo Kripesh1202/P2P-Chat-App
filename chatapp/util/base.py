@@ -21,29 +21,12 @@ class MsgLog():
                 mode='r+', encoding='utf-8') as msg_log:
             msg_data=msg_log.readlines()
             return msg_data
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c71df84 (updated exception errors)
-=======
->>>>>>> origin/main
         
     def clear_log(self):
         """Clear all message logs from file"""
         with open(file=r"chatapp\msg_data\msg_log.txt", \
                   mode='w', encoding='utf-8') as msg_log:
             msg_log.write('')
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
-=======
->>>>>>> c71df84 (updated exception errors)
-=======
-=======
->>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
->>>>>>> origin/main
 
 
 
@@ -87,13 +70,6 @@ class ConfigFile():
     def get_all_config(self):
         """Get both user and parnter config"""
         self.conf.read(r'chatapp\util\config.ini')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c71df84 (updated exception errors)
-=======
->>>>>>> origin/main
         return self.conf    
 
 
@@ -105,16 +81,4 @@ class ConfigFile():
             self.conf['PARTNER']['NAME'] = ''
             self.conf['PARTNER']['IP'] = ''
             self.conf.write(wc)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        return self.conf        
->>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
-=======
->>>>>>> c71df84 (updated exception errors)
-=======
-=======
-        return self.conf        
->>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
->>>>>>> origin/main
         

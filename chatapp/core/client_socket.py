@@ -42,17 +42,4 @@ class ClientSocket:
     def close_sock(self):
         """Close server connection"""
         self.server_sock.close()
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         print("Client Socket Closed")
-=======
->>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
-=======
-        print("Client Socket Closed")
->>>>>>> c71df84 (updated exception errors)
-=======
-        print("Client Socket Closed")
-=======
->>>>>>> a80bc70172e467c43b5fb15c755f6fb94644041f
->>>>>>> origin/main
